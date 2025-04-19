@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleepy Joe Coin Presale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sleepy Joe Coin (SPJ) Presale</h1>
+        <p>Send BNB to the wallet below and refresh to see your transaction.</p>
+        <div class="wallet">
+            <strong>Presale Wallet Address:</strong><br>
+            <code>0x8CB085A285c2fD31212aF79704967C9D380A9dC1</code>
+        </div>
+
+        <form id="presaleForm">
+            <input type="text" placeholder="Your Wallet Address" id="buyer" required>
+            <input type="text" placeholder="Referral Wallet (optional)" id="referrer">
+            <input type="number" placeholder="Amount Sent (BNB)" id="amount" required step="0.0001">
+            <button type="submit">Submit Transaction</button>
+        </form>
+
+        <h2>Recent Transactions</h2>
+        <table id="transactions">
+            <tr>
+                <th>Buyer</th>
+                <th>Referrer</th>
+                <th>BNB Sent</th>
+                <th>SPJ Received</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
